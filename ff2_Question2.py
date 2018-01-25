@@ -42,9 +42,9 @@ char_string= getFreq(rand_str)
 print "Enter a string of length:",str(len(rand_str))
 text = str(raw_input())
 print("\n")
+game(text,rand_str,"User",char_string)
 print "Random String ",rand_str
 print "User Guess String ",text
-game(text,rand_str,"User",char_string)
 
 
 print"\n"
@@ -55,6 +55,6 @@ num = random.randint(3,10)
 rand_str = getRandString(num)
 comp_text = getRandString(num)
 char_string = getFreq(rand_str)
+game(comp_text,rand_str,"Computer",char_string)
 print "Random String ",rand_str
 print "Computer Guess String ",comp_text
-game(comp_text,rand_str,"Computer",char_string)
